@@ -9,11 +9,10 @@ import { UilEllipsisH,
 from '@iconscout/react-unicons'
 
 const PublicationContainer = styled.div`
-  border: 1px solid #363636;
+  border: 1px solid #DBDBDB;
   border-radius: 7px;
 
   width: 470px;
-  height: 570px;
 
   margin-right: 320px;
   margin-top: 20px;
@@ -24,9 +23,9 @@ const PublicationContainer = styled.div`
   }`
 
 const PubliactionHeader = styled.div`
-  height: 70px;
+  height: 50px;
 
-  border-bottom: 1px solid #363636;
+  border-bottom: 1px solid #DBDBDB;
 
   display: flex;
   align-items: center;
@@ -40,7 +39,7 @@ const PublicationHeaderUser = styled.div`
   align-items: center;
   gap: 10px;
   p{
-    color: white;
+    color: black;
 
     font-size: 14px;
     font-weight: bolder;
@@ -54,6 +53,7 @@ const PublicationHeaderUserImage = styled.div`
   height: 37px;
 
   background: white;
+  background-size: 37px;
 
   border-radius: 18px;
 
@@ -70,15 +70,12 @@ const PublicationImageContainer = styled.div`
 
 const PublicationDescriptionContainer = styled.div`
   width: 100%;
-  height: 240px;
-
-  border: 1px solid #363636;
 
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  color: white;
+  color: black;
   font-size: 14px;
 
   padding: 10px;`
@@ -87,7 +84,7 @@ const PublicationDescriptionHeader = styled.div`
   display: flex;
   gap: 10px;
 
-  color: white;`
+  color: black;`
   
 const SaveButtonStyle = {
   position: "relative",
@@ -106,10 +103,8 @@ const PublicationCommentInputContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 20px;
 
-  position: relative;
-  top: 50px;
+  margin-top: 30px;
 
   p{
     color: #0095F6;
@@ -128,7 +123,7 @@ const PublicationCommentInput = styled.div`
 
     padding-right: 150px;
 
-    color: white;
+    color: black;
     font-size: inherit;
   }
   input:focus{
@@ -171,8 +166,8 @@ export function Publication(props){
           <PublicationCommentInput>
           <UilGrin />
           <input type="text" placeholder='Adicione um comentário...' />
+          <p>Publicar</p>
           </PublicationCommentInput>
-          <p></p>
         </PublicationCommentInputContainer>
       </PublicationDescriptionContainer>
     </PublicationContainer>

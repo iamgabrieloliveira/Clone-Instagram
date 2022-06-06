@@ -20,14 +20,15 @@ const CurrentUserImage = styled.div`
 
   border-radius: 28px;
 
-  background: white;`
+  background: white;
+  background-size: 56px;`
 
 const CurrentUserName = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
 
-  color: white;
+  color: black;
   h1{
   font-size: 14px;
   font-weight: bolder;

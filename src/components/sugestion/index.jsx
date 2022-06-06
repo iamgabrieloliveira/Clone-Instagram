@@ -6,7 +6,7 @@ const SugestionContainer = styled.div`
   flex-direction: column;
   gap: 20px;
 
-  color: white;`
+  color: black;`
 
 const SugestionUserContainer = styled.div`
   display: flex;
@@ -23,7 +23,7 @@ const SugestionUserImage = styled.div`
   height: 32px;
   width: 32px;
 
-  background: white;
+  background: black;
 
   border-radius: 16px;`
 
@@ -32,9 +32,10 @@ const SugestionUser = styled.div`
   flex-direction: column;
   gap: 5px;
 
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bolder;
 
-  color: white;
+  color: black;
   `
 const FollowBy = styled.p`
   color: #888888;
@@ -53,7 +54,7 @@ export function Sugestion(props){
     <SugestionContainer>
       <SugestionUserContainer>
         <UserSugestionContainer>
-        <SugestionUserImage style={{backgroundImage: `url(${props.sugestionuserimg})`}}></SugestionUserImage>
+        <SugestionUserImage></SugestionUserImage>
         <SugestionUser>
           <p>{props.sugestionuser}</p>
           <FollowBy>Seguido(a) por {props.followedby}</FollowBy>

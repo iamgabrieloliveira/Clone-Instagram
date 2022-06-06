@@ -15,10 +15,10 @@ const StoryImage = styled.div`
   width: 54px;
   height: 54px;
   
-  border: 1px solid rgb(13, 255, 0);
+  border: 2px solid rgb(13, 255, 0);
   border-radius: 27px;
   
-  background: #000;
+  background: black;
 
   background-size: 54px;
   background-repeat: no-repeat;
@@ -26,12 +26,10 @@ const StoryImage = styled.div`
 `
 
 const StoryUserName = styled.p`
-  color: white;
+  color: black;
 
   font-size: 12px;
   font-weight: normal;`
-
-
 
 
 export function Story(props){
